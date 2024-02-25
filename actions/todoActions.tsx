@@ -53,6 +53,10 @@ export async function edit(formData: FormData) {
   const inputTitle = formData.get('newTitle') as string
   const inputId = formData.get('inputId') as string
 
+  if (!inputTitle.trim()) {
+    return
+  }
+
   await prisma.todo.update({
     where: {
       id: inputId,

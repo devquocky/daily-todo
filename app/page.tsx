@@ -22,24 +22,13 @@ const Home = async () => {
 
   return (
     <div className="w-sceen py-20 flex justify-center flex-col items-center">
-      <span
-        className="text-3xl font-extrabold
-      uppercase"
-      >
-        TO-DO-APP
-      </span>
-      <h1
-        className="text-3xl font-extrabold 
-        uppercase mb-5"
-      >
+      <span className="text-3xl font-extrabold uppercase">TO-DO-APP</span>
+      <h1 className="text-3xl font-extrabold uppercase mb-5">
         Next.js 14
         <span className="text-orange-700"> By Flag Nguyen</span>
       </h1>
 
-      <div
-        className="fkex justify-center flex-col 
-        items-center w-[1000px]"
-      >
+      <div className="fkex justify-center flex-col items-center w-[1000px]">
         <AddTodo />
         <div className="flex flex-col gap-5 items-center justify-center mt-10 w-full">
           {data.map((todo, id) => (
